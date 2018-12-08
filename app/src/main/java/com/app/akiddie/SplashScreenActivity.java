@@ -27,11 +27,18 @@ public class SplashScreenActivity extends AppCompatActivity {
         imageView.startAnimation(animation);
 
         /*helps run the object later on the main UI thread without blocking other operations */
+
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
         mHandler = new Handler();
         mRunnable = new Runnable() {
             @Override
             public void run() {
-                Intent toMainActivity = new Intent(SplashScreenActivity.this, MainActivity.class);
+                Intent toMainActivity = new Intent(SplashScreenActivity.this, LoginActivity.class);
                 startActivity(toMainActivity);
                 finish();
             }
@@ -46,12 +53,6 @@ public class SplashScreenActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
         mHandler.postDelayed(mRunnable, SPLASH_TIME_OUT);
     }
 
