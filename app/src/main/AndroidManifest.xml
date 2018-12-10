@@ -23,7 +23,10 @@
         <activity
             android:name=".LoginActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".SignUpActivity"
+            android:exported="true">
+
+        </activity>
     </application>
 
 </manifest>
