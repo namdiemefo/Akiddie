@@ -12,4 +12,14 @@
     <string name="verify_password_hint">Verify Password</string>
     <string name="sign_up_btn">Sign Up</string>
     <string name="mock_up">mock up</string>
+    <string name="english_item">English</string>
+    <string name="hausa_item">Hausa</string>
+    <string name="ibo_item">Igbo</string>
+    <string name="yoruba_item">Yoruba</string>
+    <string name="drawer_item_standard">Standard</string>
+    <string name="drawer_item_narrator">Narrator</string>
+    <string name="personal_info">Personal Info</string>
+    <string name="app_preferences">App Preferences</string>
+    <string name="payments">Payments</string>
+    <string name="adeola_profile">Adeola Opawuyi</string>
 </resources>
