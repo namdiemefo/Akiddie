@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/book_icon"
+        android:icon="@drawable/book"
+        app:showAsAction="always"
+        android:orderInCategory="100"
+        android:title=""/>
+
+    <item
+        android:title=""
+        android:id="@+id/user_icon"
+        app:showAsAction="always"
+        android:orderInCategory="200"
+        android:icon="@drawable/person"/>
+
+    <item android:id="@+id/english"
+        app:showAsAction="never"
+        android:orderInCategory="100"
+        android:title="@string/english_item"
+        />
+
+    <item app:showAsAction="never"
+        android:title="@string/hausa_item"
+        android:orderInCategory="200"
+        android:id="@+id/hausa"/>
+
+    <item android:title="@string/ibo_item"
+        app:showAsAction="never"
+        android:orderInCategory="300"
+        android:id="@+id/ibo"/>
+
+    <item android:id="@+id/yoruba"
+        android:orderInCategory="400"
+        app:showAsAction="never"
+        android:title="@string/yoruba_item"/>
+
+
+
+
+
+</menu>
