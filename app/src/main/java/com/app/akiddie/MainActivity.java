@@ -16,6 +16,7 @@ import android.view.MenuItem;
 
 import com.app.akiddie.Adapters.BookAdapter;
 import com.app.akiddie.Entities.BooksObject;
+import com.app.akiddie.Helpers.BookSample;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         bookRecyclerView.setLayoutManager(gridLayoutManager);
         bookRecyclerView.setHasFixedSize(true);
 
-        BookAdapter bookAdapter = new BookAdapter(MainActivity.this, getAllBooks());
+        BookAdapter bookAdapter = new BookAdapter(MainActivity.this, BookSample.BOOKS_OBJECTS);
         bookRecyclerView.setAdapter(bookAdapter);
 
         mDrawableLayout = findViewById(R.id.drawer_layout);
@@ -50,17 +51,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private List<BooksObject> getAllBooks() {
-        List<BooksObject> books = new ArrayList<BooksObject>();
+   // private List<BooksObject> getAllBooks() {
+     //   List<BooksObject> books = new ArrayList<BooksObject>();
 
-        books.add(new BooksObject(1, "Jandu", R.drawable.artboard_1));
-        books.add(new BooksObject(2, "Rilwan", R.drawable.artboard_2));
-        books.add(new BooksObject(3, "Tunde", R.drawable.artboard_3));
-        books.add(new BooksObject(4, "Chiamaka", R.drawable.artboard_4));
-        books.add((new BooksObject(5, " Chisom", R.drawable.artboard_5)));
-        books.add(new BooksObject(6, "Kelvin", R.drawable.artboard_6));
-        return books;
-    }
+      //  books.add(new BooksObject(1, "Jandu", R.drawable.artboard_1));
+        // books.add(new BooksObject(2, "Rilwan", R.drawable.artboard_2));
+       // books.add(new BooksObject(3, "Tunde", R.drawable.artboard_3));
+       // books.add(new BooksObject(4, "Chiamaka", R.drawable.artboard_4));
+      //  books.add((new BooksObject(5, " Chisom", R.drawable.artboard_5)));
+      //  books.add(new BooksObject(6, "Kelvin", R.drawable.artboard_6));
+      //  return books;
+    //}
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
